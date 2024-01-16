@@ -1,0 +1,20 @@
+{
+  "name": "wenauthn-web3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "@fuel-wallet/sdk": "^0.13.10",
+    "fuels": "^0.67.0"
+  },
+  "dependencies": {
+    "authn-sign": "^0.0.7"
+  }
+}
