@@ -16,6 +16,7 @@ export default function buildPredicate(provider: Provider, address: string) {
   return predicate;
 }
 
+// @ts-ignore
 export function setData(predicate: Predicate, signature: string, authid: string, txid: string, pre: string, post: string) {
   predicate.setData(
     signature,

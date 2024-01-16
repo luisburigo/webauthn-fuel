@@ -1,6 +1,5 @@
-import Account, { base64ToHex, buildOptions } from 'authn-sign';
+import Account, { base64ToHex } from 'authn-sign';
 import {
-  Address,
   BaseAssetId,
   bn,
   hashTransaction,
@@ -15,6 +14,7 @@ window.addEventListener('load', main);
 
 const RECEIVER = 'fuel1jnluc5acjf5y4nh6a0y28499jhjj32x0ve8wk0hndugzpvyqn5xsfsfzly';
 
+// @ts-ignore
 const state: { address: string, account: Account | null, balance: string, username: string, predicate: Predicate | null, provider: Provider | null } = {
   address: '',
   account: null,
@@ -24,6 +24,7 @@ const state: { address: string, account: Account | null, balance: string, userna
   provider: null,
 };
 
+// @ts-ignore
 function stop(timeout: number) {
   return new Promise(resolve => setTimeout(resolve, timeout));
 }
@@ -65,6 +66,7 @@ async function getBalance() {
   state.balance = `${balance.format()} ETH`;
 }
 
+// @ts-ignore
 async function transfer() {
   const tx = new ScriptTransactionRequest();
   tx.gasPrice = bn(1);

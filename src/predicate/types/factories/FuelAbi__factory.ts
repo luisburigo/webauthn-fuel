@@ -24,6 +24,7 @@ export type FuelAbiConfigurables = {
   ADDRESS: string;
 };
 
+// @ts-ignore
 type FuelAbiInputs = [signature: string, authid: Bytes, txid: string, pre: Bytes, post: Bytes];
 
 const _abi = {
